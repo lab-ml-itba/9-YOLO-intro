@@ -1,4 +1,4 @@
-from  keras.utils import Sequence
+from tensorflow.keras.utils import Sequence
 from keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 from matplotlib import pyplot as plt
