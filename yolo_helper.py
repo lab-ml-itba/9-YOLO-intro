@@ -296,7 +296,7 @@ def iou_metric(y_true, y_pred):
     return iou
 
 import numpy as np
-from  keras.utils import Sequence
+from tensorflow.keras.utils import Sequence
 from keras.preprocessing.image import ImageDataGenerator
 from imgaug import augmenters as iaa
 import imgaug as ia
