@@ -33,7 +33,7 @@ def yolo_bbox_2_PASCAL_VOC(grid_coordinates, bbox_yolo, im_height, im_width, GRI
 
 # Esto solo hace un reshape particular antes de concatenar a la salida
 def space_to_depth_x2(x):
-    return tf.space_to_depth(x, block_size=2)
+    return tf.nn.space_to_depth(x, block_size=2)
 
 def get_YOLO_V2_NN(IMAGE_H, IMAGE_W, BOX, CLASS, GAP=False):
     input_image = Input(shape=(IMAGE_H, IMAGE_W, 3))
