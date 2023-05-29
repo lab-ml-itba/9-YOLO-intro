@@ -171,8 +171,8 @@ def YOLO_V2_model(IMAGE_H, IMAGE_W, NUMBER_OF_CLASSES, NUMBER_OF_BBOXES, GAP=Fal
     x = Conv2D(NUMBER_OF_BBOXES * (4 + 1 + NUMBER_OF_CLASSES), (1,1), strides=(1,1), padding='same', name='conv_23')(x)
     
 
-    GRID_H = x.shape[1].value
-    GRID_W = x.shape[2].value
+    GRID_H = x.shape[1]
+    GRID_W = x.shape[2]
     
 
     if GAP:
